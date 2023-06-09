@@ -1,0 +1,29 @@
+
+ <hr>
+ <h3>Добавить абонента:</h3>
+ <h4>Введите имя и добавьте фото</h4>
+  <form method='POST' action='/adduser' enctype="multipart/form-data"  >
+ <input type="text" placeholder='Введите имя' name='username' />
+  <input class="input-type" type="file" name='file' />
+   <button >Добавить абонента</button>
+  </form>
+  <hr>
+    <h3>Список абонентов:</h3>
+   {{#each abonents}}
+   <hr>
+   <li class="list-wrapper">  
+  <div class="list-item">
+     {{#if photo }}
+ <img src='{{photo}}' alt="фото">
+ {{else}}
+      <img src='avatar.jpg' alt="photo"> 
+      {{/if}}
+      <span>{{name}}</span>
+  </div>
+ <div class="list-item">
+     <a href="/phones/{{id}}"><button>Показать телефоны</button></a> 
+     <a href="/deleteuser/{{id}}"><button>Удалить абонента</button></a>  
+ </div>
+     </li>
+   {{/each}} 
+ 

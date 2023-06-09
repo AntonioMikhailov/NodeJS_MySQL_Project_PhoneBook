@@ -1,0 +1,12 @@
+<div class="navbar-wrapper">
+  {{#if isHome}}
+  <div class="active"><a href="/">Главная</a></div>
+       {{else}}
+       <div><a href="/">Главная</a></div>
+              {{/if}}
+  {{#if isSearch}}
+ <div class="active"><a href="/search">Поиск</a></div>
+       {{else}}
+        <div><a href="/search">Поиск</a></div>
+              {{/if}}
+</div>

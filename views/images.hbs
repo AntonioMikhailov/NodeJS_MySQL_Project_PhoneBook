@@ -1,0 +1,13 @@
+ <h3>ФОТО </h3>
+  <ul>
+      {{#each ress}}
+  <li> 
+     {{#if imgtext}}
+
+    <img src='data:image/jpeg;base64,{{imgtext}}' alt="фото">
+  {{else}}
+  <img src='default.png' alt="photo">
+      {{/if}}
+    </li>
+  {{/each}} 
+    </ul>

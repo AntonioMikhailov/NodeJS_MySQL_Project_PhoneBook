@@ -1,0 +1,13 @@
+ 
+  <form class="search-form" method='GET' action='/search'>
+<input class='search' type="text" placeholder='Поиск имени' name='abonent_query' />
+ <button >Поиск</button>
+</form>
+<h3>Найдено номеров: {{finded}}</h3>
+ <ul>
+    {{#each data}}
+    <hr>
+   <li> {{name}}:  <a href="tel:{{number}}">{{number}}</a> -  {{type}}</li>
+  {{/each}} 
+</ul>
+ 

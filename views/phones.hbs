@@ -1,0 +1,14 @@
+ 
+  <form method='POST' action='/addphone/{{abonent_id}}'>
+  <input type="text" placeholder='добавить телефон' name='number' />
+  <input type="text" placeholder='тип' name='type' />
+  <button >Добавить</button>
+  </form>
+     <hr />
+  <h3 class="phones-name">Имя абонента: <span>{{abonentName}}</span></h3>
+  <ul>
+  {{#each telephones}}
+        <hr />
+   <li class="phones-list">  {{number}} {{type}} <a href="/removephone/{{id}}"><button>Удалить</button></a></li>
+  {{/each}} 
+    </ul>

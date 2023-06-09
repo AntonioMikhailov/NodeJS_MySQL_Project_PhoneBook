@@ -1,0 +1,215 @@
+* {
+  background-color: rgb(241, 248, 255);
+  padding: 0;
+  margin: 0 ;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  /* background-color: rgb(255, 255, 255); */
+  margin-top: 20px;
+  
+}
+img {
+ width: 50px;
+ height: 50px;
+  border-radius: 50%;
+  
+  
+}
+a {
+  background-color: transparent; 
+  text-decoration: none;
+  color: inherit;
+}
+input[type='text'] {
+  border: transparent;
+  background-color: #fff;
+  height: 20px;
+  padding: 5px;
+  border-radius:3px;
+  
+}
+button {
+  // margin: 10px 0px 0px 0px;
+  
+  border: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+ background-color: rgb(213, 99, 0);
+ background-color: rgb(92, 92, 92);
+  color: rgb(245, 245, 245);
+  height: 20px;
+  padding: 12px 20px 12px 20px;
+  // padding: 15px 30px 15px 30px;
+
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease .0s;
+  
+  &:hover {
+    background-color: rgb(255, 152, 61);
+    background-color: rgb(213, 99, 0);
+  }
+}
+// input::file-selector-button {
+//  color: rgb(255, 255, 255);
+// padding: 5px 10px 5px 10px;
+//   background-color: rgb(213, 99, 0);
+//   border: transparent;
+//   border-radius: 3px;
+//   cursor: pointer;
+//   transition: all 0.3s ease .0s;
+//   // border:  10px solid rgb(122, 122, 122);
+//   &:hover {
+//     background-color: rgb(255, 152, 61);
+//   }
+// }
+
+ // прячем саму кнопку и покажем только ее :before
+ .input-type::file-selector-button  {
+  display: none;
+}
+ .input-type:before {
+  content: 'выберите фото';
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px 5px 10px;
+    background-color: rgb(213, 99, 0);
+    background-color: rgb(92, 92, 92);
+    border: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease .0s;
+    margin: 0px 10px 0px 0px; // отодвинем от кнопки
+     }
+
+     .input-type:hover:before {
+      background-color: rgb(255, 152, 61);
+      background-color: rgb(213, 99, 0);
+    }
+hr {
+  margin: 10px 0px 10px 0px;
+  
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0px 0px 10px 0px;
+  
+}
+h4 {
+  margin: 0px 0px 5px 0px;
+  font-size: 14px;
+  
+}
+
+.navbar-wrapper {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  justify-content: center;
+  // gap: 20px;
+   a { 
+    display: block;
+    position: relative;
+    color: rgb(238, 238, 238);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease .0s;
+    
+    
+  }
+  div {
+    width: 100%;
+    height: 100%;
+    // border:  1px solid rgb(122, 122, 122);
+    // border-right: 10px solid rgb(122, 122, 122);
+
+    background-color: rgb(0, 50, 114);
+    transition: all 0.3s ease .0s;
+    
+  }
+  div:first-child {
+    border-right: 1px solid rgb(235, 235, 235);
+  }
+  div:hover > a { 
+    color: rgb(0, 50, 114);
+   }
+ div:hover { 
+  background-color: #fff;
+   }
+   .active a::before {
+  content: '\00BB';
+  margin: -3px 10px 0px 0px;
+ }
+
+}
+
+
+form {
+  margin: 10px 0px 0px 0px;
+  
+  display: flex;
+  // justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-form {
+  margin: 20px 0px 20px 0px;
+  justify-content: start;
+  
+}
+li {
+  list-style: square inside;
+}
+li span {
+  margin: 0px 30px 0px 0px;
+  
+} 
+ 
+ .list-wrapper {
+  display: flex;
+   flex-basis:  50%;
+  
+//  justify-content: space-around;
+ justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+ }
+ .list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ }
+ .phones-list {
+  display: flex;
+  justify-content: space-between;
+ }
+ .phones-name {
+  text-transform:  none;
+  font-size: 14px;
+  span {
+    text-transform:  uppercase;
+    font-size: 20px;
+  }
+ }
+ .search-list {
+ 
+ }
